@@ -1,0 +1,657 @@
+/*
+skins available:
+	- bullets
+	- thumbs
+*/
+
+/* the container */
+.parallax_ultra {
+	position:relative;
+}
+.parallax_ultra img {
+	max-width:none;
+	max-height:none;
+}
+.parallax_ultra_list {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:none;
+}
+
+
+
+.parallax_ultra .contentHolderVisibleWrapper {
+	position:absolute;
+	overflow:hidden;
+}
+.parallax_ultra .contentHolder {
+	position:absolute;
+}
+.parallax_ultra .contentHolderUnit {
+	float:left;
+	display:block;
+	overflow:hidden;
+}
+.mycanvas {
+	position:absolute;
+	top:8px;
+	right:10px;
+	z-index:10;
+}
+.myloader {
+	background:url(skins/ultra/loader.gif);
+	width:37px;
+	height:37px;
+	position:absolute;
+	left:49%;
+	top:49%;
+	z-index:5;
+}
+
+.parallax_ultra_all_bgArr {
+	position:absolute;
+	overflow:hidden;
+	z-index:0;
+}
+
+.parallax_ultra_bgArr {
+	position:absolute;
+	z-index:0;
+	display:block;
+	/*background:url(images/thumbsFullWidth/bg.png) repeat;*/
+}
+
+.parallax_ultra_bgArr_unit_IE78 {
+	display:block;
+	float:left;
+	/*background-position:center center fixed no-repeat;*/
+}
+
+/***bullets SKIN***/
+.parallax_ultra.bullets .bannerControls {
+	position:absolute;
+	left:0;
+	top:0;
+	/*z-index:1;*/
+	z-index:5;
+	width:100%;
+}
+
+.parallax_ultra.bullets .leftNav {
+	position:absolute;
+	left:20px;
+	width:41px;
+	height:41px;
+	background:url(skins/ultra/bullets/leftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.parallax_ultra.bullets .leftNav:hover {
+	background:url(skins/ultra/bullets/leftNavON.png) 0 0 no-repeat;
+}
+.parallax_ultra.bullets .rightNav {
+	position:absolute;
+	right:20px;
+	width:41px;
+	height:41px;
+	background:url(skins/ultra/bullets/rightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.parallax_ultra.bullets .rightNav:hover {
+	background:url(skins/ultra/bullets/rightNavON.png) 0 0 no-repeat;
+}
+.parallax_ultra.bullets .bottomNav {
+	position:absolute;
+	width:0px;
+	height:24px;
+	bottom:-35px;
+	z-index:3;
+	padding-left:5px;
+}
+.parallax_ultra.bullets .bottomNavButtonOFF {
+	float:left;
+	display:block;
+	width:14px;
+	height:14px;
+	background:url(skins/ultra/bullets/bottomNavOFF.png) 0 0 no-repeat;
+	padding-left:9px;
+	cursor: pointer;
+}
+
+.parallax_ultra.bullets .bottomNavButtonON {
+	float:left;
+	display:block;
+	width:14px;
+	height:14px;
+	padding-left:9px;
+	background:url(skins/ultra/bullets/bottomNavON.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.parallax_ultra.bullets .bottomNavLeft {
+	position:absolute;
+	width:0px;
+	display:none;
+	background:#F00;
+	height:24px;
+	bottom:5px;
+	z-index:3;
+}
+
+.parallax_ultra.bullets .bottomNavRight {
+	position:absolute;
+	width:0px;
+	display:none;
+	height:24px;
+	background:#F00;
+	bottom:5px;
+	z-index:3;
+}
+
+.parallax_ultra.bullets .bottomOverThumb {
+	position:absolute;
+	width:88px;
+	height:95px;
+	background:url(skins/ultra/bullets/bottomOverThumbBg.png) 0px 0px no-repeat;
+	bottom:25px;
+	margin-left:-44px;
+}
+.parallax_ultra.bullets .innerBottomOverThumb {
+	position:relative;
+	width:80px;
+	height:80px;
+	margin:4px 0 0 4px;
+	overflow:hidden;
+}
+.parallax_ultra.bullets .bottomOverThumb img {
+
+}
+.parallax_ultra.bullets .playOver {
+	position:absolute;
+	width:73px;
+	height:73px;
+	background:url(skins/ultra/bullets/play_overOFF.png) 0 0 no-repeat;
+	display:none;
+	z-index:4;
+	cursor: pointer;
+}
+
+.parallax_ultra.bullets .playOver:hover {
+	background:url(skins/ultra/bullets/play_overON.png) 0 0 no-repeat;
+	display:none;
+	z-index:4;
+	cursor: pointer;
+}
+
+
+
+
+
+
+/***thumbs SKIN***/
+.parallax_ultra.thumbs .bannerControls {
+	position:absolute;
+	left:0;
+	top:0;
+	/*z-index:1;*/
+	z-index:5;
+	width:100%;
+}
+
+.parallax_ultra.thumbs .leftNav {
+	position:absolute;
+	left:20px;
+	width:41px;
+	height:41px;
+	background:url(images/leftNavOFF.png);
+	cursor: pointer;
+}
+.parallax_ultra.thumbs .leftNav:hover {
+	background:url(images/leftNavON.png) 0 0 no-repeat;
+}
+.parallax_ultra.thumbs .rightNav {
+	position:absolute;
+	right:20px;
+	width:41px;
+	height:41px;
+	background:url(images/rightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.parallax_ultra.thumbs .rightNav:hover {
+	background:url(images/rightNavON.png) 0 0 no-repeat;
+}
+.parallax_ultra.thumbs .bottomNav {
+	position:absolute;
+	width:0px;
+	height:24px;
+	bottom:-35px;
+	z-index:3;
+	xpadding-left:9px;
+
+}
+.parallax_ultra.thumbs .bottomNavButtonOFF {
+	float:left;
+	display:block;
+	width:14px;
+	height:14px;
+	background:url(images/bottomNavOFF.png) 0 0 no-repeat;
+	xpadding-left:9px;
+	cursor: pointer;
+}
+
+.parallax_ultra.thumbs .bottomNavButtonON {
+	float:left;
+	display:block;
+	width:14px;
+	height:14px;
+	xpadding-left:9px;
+	background:url(images/bottomNavON.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.parallax_ultra.thumbs .bottomNavLeft {
+	position:absolute;
+	width:0px;
+	display:none;
+	background:#F00;
+	height:24px;
+	bottom:5px;
+	z-index:3;
+}
+
+.parallax_ultra.thumbs .bottomNavRight {
+	position:absolute;
+	width:0px;
+	display:none;
+	height:24px;
+	background:#F00;
+	bottom:5px;
+	z-index:3;
+}
+
+.parallax_ultra.thumbs .bottomOverThumb {
+	position:absolute;
+	width:88px;
+	height:95px;
+	background:url(images/bottomOverThumbBg.png) 0px 0px no-repeat;
+	bottom:25px;
+	margin-left:-44px;
+}
+.parallax_ultra.thumbs .innerBottomOverThumb {
+	position:relative;
+	width:80px;
+	height:80px;
+	margin:4px 0 0 4px;
+	overflow:hidden;
+}
+.parallax_ultra.thumbs .bottomOverThumb img {
+
+}
+.parallax_ultra.thumbs .playOver {
+	position:absolute;
+	width:73px;
+	height:73px;
+	background:url(images/play_overOFF.png) 0 0 no-repeat;
+	display:none;
+	z-index:4;
+	cursor: pointer;
+}
+
+.parallax_ultra.thumbs .playOver:hover {
+	background:url(images/play_overON.png) 0 0 no-repeat;
+	display:none;
+	z-index:4;
+	cursor: pointer;
+}
+
+/* thumbs */
+.parallax_ultra.thumbs .thumbsHolderWrapper {
+	position:absolute;
+	height:135px;
+	width:100%;
+	overflow:hidden;
+	padding:0;
+	z-index:2;
+}
+.parallax_ultra.thumbs .thumbsHolderVisibleWrapper {
+	position:absolute;
+	width:100%;
+	height:135px;
+	overflow:hidden;
+}
+.parallax_ultra.thumbs .thumbsHolder {
+	position:absolute;	
+}
+.parallax_ultra.thumbs .thumbsHolder_ThumbOFF {
+	float:left;
+	display:block;
+	width:95px;
+	height:65px;
+	cursor: pointer;
+}
+
+
+.parallax_ultra.thumbs .thumbsHolder_ThumbOFF img {
+	position:relative;
+}
+
+.parallax_ultra.thumbs .thumbsHolder_ThumbON {
+	background:url(images/thumbActiveArrow.png) center 0px no-repeat;
+}
+
+.parallax_ultra.thumbs .thumbsHolder_ThumbON img {
+	position:relative;
+}
+
+
+.parallax_ultra.thumbs .carouselLeftNav {
+	position:absolute;
+	width:16px;
+	height:135px;
+	background:url(images/carouselLeftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.parallax_ultra.thumbs .carouselLeftNav:hover {
+	background:url(images/carouselLeftNavON.png) 0 0 no-repeat;
+}
+
+.parallax_ultra.thumbs .carouselLeftNavDisabled {
+	background:url(images/carouselLeftNavDisable.png) 0 0 no-repeat;
+	cursor:default;
+}
+.parallax_ultra.thumbs .carouselLeftNavDisabled:hover {
+	background:url(images/carouselLeftNavDisable.png) 0 0 no-repeat;
+}
+
+.parallax_ultra.thumbs .carouselRightNav {
+	position:absolute;
+	width:16px;
+	height:135px;
+	background:url(images/carouselRightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.parallax_ultra.thumbs .carouselRightNav:hover {
+	background:url(images/carouselRightNavON.png) 0 0 no-repeat;
+}
+
+.parallax_ultra.thumbs .carouselRightNavDisabled {
+	background:url(images/carouselRightNavDisable.png) 0 0 no-repeat;
+	cursor:default;
+}
+.parallax_ultra.thumbs .carouselRightNavDisabled:hover {
+	background:url(images/carouselRightNavDisable.png) 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+/***Text Styles***/
+
+
+.parallax_ultra_texts {
+	position:absolute;
+	z-index:2;
+	/*display: none;*/
+	width:100%;
+}
+.parallax_ultra_text_line {
+	position:absolute;
+	display: none;
+}
+
+
+/****bullets Texts***/
+
+.textElement21_bullets {
+	width:26%;
+	font: 15px/20px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+.textElement22_bullets {
+	width:33%;
+	font: bold 22px/27px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+.textElement22_bullets a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#aa5eb1;
+	text-decoration:underline;
+}
+
+.textElement22_bullets a:hover {
+	color:#fa7b00;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+/****bulletsFullWidth Texts***/
+
+.textElement11_bulletsFW {
+	width:25%;
+	text-align:right;
+	font: 40px/45px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color: #000;
+}
+
+.textElement12_bulletsFW {
+	text-align:right;
+	font: 20px/26px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+	width:29%;
+}
+
+.textElement12_bulletsFW a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#490000;
+	text-decoration:none;
+}
+
+.textElement12_bulletsFW a:hover {
+	text-decoration:underline;
+}
+
+
+
+.textElement21_bulletsFW {
+	width:26%;
+	font: 24px/34px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+.textElement22_bulletsFW {
+	width:26%;
+	font: bold 48px/58px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+
+.textElement41_bulletsFW {
+	width:26%;
+	font: 22px/32px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+.textElement42_bulletsFW {
+	width:26%;
+	font: bold 32px/40px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+.textElement42_bulletsFW a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#aa5eb1;
+	text-decoration:underline;
+}
+
+.textElement42_bulletsFW a:hover {
+	color:#fa7b00;
+	text-decoration:underline;
+}
+
+
+
+
+/****thumbsFullWidth Texts***/
+
+
+.textElement10_thumbsFW {
+    background: url("skins/ultra/bullets/textBg_transparency.png") repeat scroll 0 0 transparent;
+    height: 30%;
+    text-align: left;
+    width: 13%;
+}
+
+.textElement11_thumbsFW {
+	font: bold 25px/32px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#77c045;
+}
+
+.textElement11_thumbsFW a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#77c045;
+	text-decoration:none;
+}
+
+.textElement11_thumbsFW a:hover {
+	text-decoration:underline;
+}
+
+
+.textElement12_thumbsFW {
+	font: 16px/20px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#ffffff;
+	width:11%;
+}
+
+.textElement20_thumbsFW {
+    background: url("skins/ultra/bullets/textBg_transparency70.png") repeat scroll 0 0 transparent;
+    width: 18%;
+	height: 10%;
+    text-align: left;    
+}
+
+.textElement21_thumbsFW {
+	font: bold 32px/42px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+.textElement31_thumbsFW {
+	font: bold 62px/72px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#e53a40;
+}
+.textElement32_thumbsFW {
+	xwidth:26%;
+	font: bold 36px/46px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+}
+
+.textElement32_thumbsFW a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#aa5eb1;
+	text-decoration:underline;
+}
+
+.textElement32_thumbsFW a:hover {
+	color:#fa7b00;
+	text-decoration:underline;
+}
+
+
+.textElement41_thumbsFW {
+	font: bold 26px/36px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#555555;
+}
+.textElement42_thumbsFW {
+	font: bold 128px/98px 'Rokkitt', serif;
+	color:#d31643;
+}
+
+.textElement42_thumbsFW a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#aa5eb1;
+	text-decoration:underline;
+}
+
+.textElement42_thumbsFW a:hover {
+	color:#fa7b00;
+	text-decoration:underline;
+}
+
+
+.textElement51_thumbsFW {
+	font: bold 32px/48px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#e63018;
+}
+
+
+
+
+
+
+
+/****sideBar Texts***/
+
+.textElement11_sideBar {
+	font: bold 32px/43px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#b10000;
+	text-transform:uppercase;
+}
+.textElement12_sideBar {
+	font: bold 14px/18px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+}
+
+.textElement21_sideBar {
+	font: bold 32px/43px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+	text-transform:uppercase;
+}
+.textElement22_sideBar {
+	font: bold 12px/18px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+}
+
+.textElement22_sideBar a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#aa5eb1;
+	text-decoration:underline;
+}
+
+.textElement22_sideBar a:hover {
+	color:#fa7b00;
+	text-decoration:underline;
+}
+
+
+
+.hideElement {
+	display:none;
+}
+
