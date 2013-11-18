@@ -40,7 +40,7 @@ skins available:
 	z-index:10;
 }
 .myloader {
-	background:url(skins/ultra/loader.gif);
+	background:url(../img/parallax/loader.gif);
 	width:37px;
 	height:37px;
 	position:absolute;
@@ -59,7 +59,7 @@ skins available:
 	position:absolute;
 	z-index:0;
 	display:block;
-	/*background:url(images/thumbsFullWidth/bg.png) repeat;*/
+	/*background:url(../img/parallax/thumbsFullWidth/bg.png) repeat;*/
 }
 
 .parallax_ultra_bgArr_unit_IE78 {
@@ -83,22 +83,22 @@ skins available:
 	left:20px;
 	width:41px;
 	height:41px;
-	background:url(skins/ultra/bullets/leftNavOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/leftNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .parallax_ultra.bullets .leftNav:hover {
-	background:url(skins/ultra/bullets/leftNavON.png) 0 0 no-repeat;
+	background:url(../img/parallax/leftNavON.png) 0 0 no-repeat;
 }
 .parallax_ultra.bullets .rightNav {
 	position:absolute;
 	right:20px;
 	width:41px;
 	height:41px;
-	background:url(skins/ultra/bullets/rightNavOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/rightNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .parallax_ultra.bullets .rightNav:hover {
-	background:url(skins/ultra/bullets/rightNavON.png) 0 0 no-repeat;
+	background:url(../img/parallax/rightNavON.png) 0 0 no-repeat;
 }
 .parallax_ultra.bullets .bottomNav {
 	position:absolute;
@@ -113,7 +113,7 @@ skins available:
 	display:block;
 	width:14px;
 	height:14px;
-	background:url(skins/ultra/bullets/bottomNavOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/bottomNavOFF.png) 0 0 no-repeat;
 	padding-left:9px;
 	cursor: pointer;
 }
@@ -124,7 +124,7 @@ skins available:
 	width:14px;
 	height:14px;
 	padding-left:9px;
-	background:url(skins/ultra/bullets/bottomNavON.png) 0 0 no-repeat;
+	background:url(../img/parallax/bottomNavON.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
@@ -152,7 +152,7 @@ skins available:
 	position:absolute;
 	width:88px;
 	height:95px;
-	background:url(skins/ultra/bullets/bottomOverThumbBg.png) 0px 0px no-repeat;
+	background:url(../img/parallax/bottomOverThumbBg.png) 0px 0px no-repeat;
 	bottom:25px;
 	margin-left:-44px;
 }
@@ -170,14 +170,14 @@ skins available:
 	position:absolute;
 	width:73px;
 	height:73px;
-	background:url(skins/ultra/bullets/play_overOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/play_overOFF.png) 0 0 no-repeat;
 	display:none;
 	z-index:4;
 	cursor: pointer;
 }
 
 .parallax_ultra.bullets .playOver:hover {
-	background:url(skins/ultra/bullets/play_overON.png) 0 0 no-repeat;
+	background:url(../img/parallax/play_overON.png) 0 0 no-repeat;
 	display:none;
 	z-index:4;
 	cursor: pointer;
@@ -203,22 +203,22 @@ skins available:
 	left:20px;
 	width:41px;
 	height:41px;
-	background:url(images/leftNavOFF.png);
+	background:url(../img/parallax/leftNavOFF.png);
 	cursor: pointer;
 }
 .parallax_ultra.thumbs .leftNav:hover {
-	background:url(images/leftNavON.png) 0 0 no-repeat;
+	background:url(../img/parallax/leftNavON.png) 0 0 no-repeat;
 }
 .parallax_ultra.thumbs .rightNav {
 	position:absolute;
 	right:20px;
 	width:41px;
 	height:41px;
-	background:url(images/rightNavOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/rightNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .parallax_ultra.thumbs .rightNav:hover {
-	background:url(images/rightNavON.png) 0 0 no-repeat;
+	background:url(../img/parallax/rightNavON.png) 0 0 no-repeat;
 }
 .parallax_ultra.thumbs .bottomNav {
 	position:absolute;
@@ -234,7 +234,7 @@ skins available:
 	display:block;
 	width:14px;
 	height:14px;
-	background:url(images/bottomNavOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/bottomNavOFF.png) 0 0 no-repeat;
 	xpadding-left:9px;
 	cursor: pointer;
 }
@@ -245,7 +245,7 @@ skins available:
 	width:14px;
 	height:14px;
 	xpadding-left:9px;
-	background:url(images/bottomNavON.png) 0 0 no-repeat;
+	background:url(../img/parallax/bottomNavON.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
@@ -273,7 +273,7 @@ skins available:
 	position:absolute;
 	width:88px;
 	height:95px;
-	background:url(images/bottomOverThumbBg.png) 0px 0px no-repeat;
+	background:url(../img/parallax/bottomOverThumbBg.png) 0px 0px no-repeat;
 	bottom:25px;
 	margin-left:-44px;
 }
@@ -291,14 +291,14 @@ skins available:
 	position:absolute;
 	width:73px;
 	height:73px;
-	background:url(images/play_overOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/play_overOFF.png) 0 0 no-repeat;
 	display:none;
 	z-index:4;
 	cursor: pointer;
 }
 
 .parallax_ultra.thumbs .playOver:hover {
-	background:url(images/play_overON.png) 0 0 no-repeat;
+	background:url(../img/parallax/play_overON.png) 0 0 no-repeat;
 	display:none;
 	z-index:4;
 	cursor: pointer;
@@ -336,7 +336,7 @@ skins available:
 }
 
 .parallax_ultra.thumbs .thumbsHolder_ThumbON {
-	background:url(images/thumbActiveArrow.png) center 0px no-repeat;
+	background:url(../img/parallax/thumbActiveArrow.png) center 0px no-repeat;
 }
 
 .parallax_ultra.thumbs .thumbsHolder_ThumbON img {
@@ -348,40 +348,40 @@ skins available:
 	position:absolute;
 	width:16px;
 	height:135px;
-	background:url(images/carouselLeftNavOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/carouselLeftNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .parallax_ultra.thumbs .carouselLeftNav:hover {
-	background:url(images/carouselLeftNavON.png) 0 0 no-repeat;
+	background:url(../img/parallax/carouselLeftNavON.png) 0 0 no-repeat;
 }
 
 .parallax_ultra.thumbs .carouselLeftNavDisabled {
-	background:url(images/carouselLeftNavDisable.png) 0 0 no-repeat;
+	background:url(../img/parallax/carouselLeftNavDisable.png) 0 0 no-repeat;
 	cursor:default;
 }
 .parallax_ultra.thumbs .carouselLeftNavDisabled:hover {
-	background:url(images/carouselLeftNavDisable.png) 0 0 no-repeat;
+	background:url(../img/parallax/carouselLeftNavDisable.png) 0 0 no-repeat;
 }
 
 .parallax_ultra.thumbs .carouselRightNav {
 	position:absolute;
 	width:16px;
 	height:135px;
-	background:url(images/carouselRightNavOFF.png) 0 0 no-repeat;
+	background:url(../img/parallax/carouselRightNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .parallax_ultra.thumbs .carouselRightNav:hover {
-	background:url(images/carouselRightNavON.png) 0 0 no-repeat;
+	background:url(../img/parallax/carouselRightNavON.png) 0 0 no-repeat;
 }
 
 .parallax_ultra.thumbs .carouselRightNavDisabled {
-	background:url(images/carouselRightNavDisable.png) 0 0 no-repeat;
+	background:url(../img/parallax/carouselRightNavDisable.png) 0 0 no-repeat;
 	cursor:default;
 }
 .parallax_ultra.thumbs .carouselRightNavDisabled:hover {
-	background:url(images/carouselRightNavDisable.png) 0 0 no-repeat;
+	background:url(../img/parallax/carouselRightNavDisable.png) 0 0 no-repeat;
 }
 
 
@@ -516,7 +516,7 @@ skins available:
 
 
 .textElement10_thumbsFW {
-    background: url("skins/ultra/bullets/textBg_transparency.png") repeat scroll 0 0 transparent;
+    background: url("../img/parallax/textBg_transparency.png") repeat scroll 0 0 transparent;
     height: 30%;
     text-align: left;
     width: 13%;
@@ -546,7 +546,7 @@ skins available:
 }
 
 .textElement20_thumbsFW {
-    background: url("skins/ultra/bullets/textBg_transparency70.png") repeat scroll 0 0 transparent;
+    background: url("../img/parallax/textBg_transparency70.png") repeat scroll 0 0 transparent;
     width: 18%;
 	height: 10%;
     text-align: left;    
