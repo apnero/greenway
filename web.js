@@ -12,11 +12,11 @@ app.post('/getFormData', function(req, res) {
   postmark.send({
     "From": "email@plasmascape.com",
     "To": "inquire@plasmascape.com",
-    "Subject": "EMAIL FROM PLASMASCAPE",
-    "TextBody": new String('From: ' + req.body.name + '.\n\rEmail: ' + req.body.email + '.\n\rPhone: ' + req.body.phone + '.\n\rSubject: ' + req.body.subject + '.\n\rMessage: ' + req.body.message)
+    "Subject": "EMAIL FROM GREENWAY",
+    "TextBody": new String('From: ' + req.body.name + '.\n\rEmail: ' + req.body.email + '.\n\rPhone: ' + req.body.phone + '.\n\rAddress: ' + req.body.address + '.\n\rMessage: ' + req.body.message)
 	}, function(error, success) {
     if(error) {
-        res.send("We have had technical difficulties and we regret to say you email hasn't been delivered to PlasmaScape");
+        res.send("We have had technical difficulties and we regret to say you email hasn't been delivered to Greenway");
        return;
     }
     res.send("Thank you for contacting us.  We will respond as soon as possible.")
