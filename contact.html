@@ -48,6 +48,8 @@
 <!-- Content strats -->
 
 <div class="content">
+
+
    <div class="container">
       <div class="row">
          <div class="col-md-12">
@@ -84,40 +86,40 @@
                                     <hr />
                                     <div class="form">
                                       <!-- Contact form (not working)-->
-                                      <form class="form-horizontal">
+									  <form id="contactform" action="/getFormData" method="post" class="form-horizontal" name="send-contact">
                                           <!-- Name -->
                                           <div class="form-group">
                                             <label class="control-label col-md-3" for="name">Name</label>
                                             <div class="col-md-9">
-                                              <input type="text" class="form-control" id="name">
+                                              <input type="text" class="form-control" name="name" id="name">
                                             </div>
                                           </div>
                                           <!-- Email -->
                                           <div class="form-group">
                                             <label class="control-label col-md-3" for="email">Email</label>
                                             <div class="col-md-9">
-                                              <input type="text" class="form-control" id="email">
+                                              <input type="text" class="form-control" name="email" id="email">
                                             </div>
                                           </div>
 										  <!-- Phone -->
 										  <div class="form-group">
                                             <label class="control-label col-md-3" for="phone">Phone</label>
                                             <div class="col-md-9">
-                                              <input type="text" class="form-control" id="phone">
+                                              <input type="text" class="form-control" name="phone" id="phone">
                                             </div>
                                           </div>
                                           <!-- Address -->
                                           <div class="form-group">
                                             <label class="control-label col-md-3" for="address">Address</label>
                                             <div class="col-md-9">
-                                              <input type="text" class="form-control" id="address">
+                                              <input type="text" class="form-control" name="address" id="address">
                                             </div>
                                           </div>
                                           <!-- Comment -->
                                           <div class="form-group">
                                             <label class="control-label col-md-3" for="comment">Comments</label>
                                             <div class="col-md-9">
-                                              <textarea class="form-control" id="comment" rows="3"></textarea>
+                                              <textarea class="form-control" id="comment" name="message" rows="3"></textarea>
                                             </div>
                                           </div>
                                           <!-- Buttons -->
@@ -155,13 +157,7 @@
 											  Saturday: 8am - 5pm<br>
 											  Sunday: Available for emergencies.
                                            </address>
-                                           
-                                           <!-- Social media icons -->
-                                           <strong>Get in touch:</strong>
-                                           <div class="social">
-                                                <a href="#"><i class="icon-facebook"></i></a>
-                                                <a href="#"><i class="icon-google-plus"></i></a>
-                                           </div>
+
                                        </div>
                                  </div>
                            </div>
@@ -179,9 +175,24 @@
             
          </div>
       </div>
+
    </div>
+   
+   
 </div>   
 
+			<div id="confirmEmailDialog" class="modal fade" tabindex="-1" role="dialog" >
+				<div class="modal-header">
+					<a href="#" class="close" data-dismiss="modal">&times;</a>
+					<h1>Email Sent to Greenway Property Maintenance!</h1>
+				</div>
+				<div class="modal-body">
+					<h2>We value your interest and we will get back to you shortly</h2>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn btn-primary" onclick="$('#confirmEmailDialog').modal('hide');">OK</a>
+				</div>
+			</div>
 <!-- Content ends --> 
 	
 <!-- Footer -->
@@ -197,10 +208,23 @@
 
 <script src="js/custom.js"></script>
 		<script type="text/javascript">
+		
 			jQuery(document).ready(function() {
 				$('.menu').load('header.html');
 				$('.footer').load('footer.html');
 			});
+			
+			$('#contactform').submit(function(e) {
+			e.preventDefault(); // Prevents the page from refreshing
+			var $this = $(this); // `this` refers to the current form element
+			$.post(
+				$this.attr("action"), // Gets the URL to sent the post to
+				$this.serialize(), // Serializes form data in standard format
+				function(data) { /** code to handle response **/ },
+				"json" // The format the response should be in
+			);
+			$('#confirmEmailDialog').modal('toggle')
+		});
 		</script>	
 </body>
 </html>
