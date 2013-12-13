@@ -1299,7 +1299,14 @@ background:none;
 }
 
 #filters a{
-font-size:12px;
+font-size:22px;
+line-height: 1.28571429;
+}
+
+#filters.button {
+font-size:22px;
+color:#ffffff;
+padding: 0px 50px;
 }
 
 /* Process */
