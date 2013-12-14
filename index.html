@@ -453,73 +453,35 @@
             
             <!-- Recent post starts. Note down the class name before editing. -->
             
-            <div class="rposts">
-               <h4>Recent Work</h4>
-				<div class="row">
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="rpost1">
-							<div class="rimg">
-								<img src="img/index/mainmini (1).jpg" alt="" class="img-responsive" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="rpost1">
-							<div class="rimg">
-								<img src="img/index/mainmini (2).jpg" alt="" class="img-responsive" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="rpost1">
-							<div class="rimg">
-								<img src="img/index/mainmini (3).jpg" alt="" class="img-responsive" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="rpost1">
-							<div class="rimg">
-								<img src="img/index/mainmini (4).jpg" alt="" class="img-responsive" />
-							</div>
-						</div>
-					</div>				
-               </div><!-- Row ends -->
-			   
-			   				<div class="row">
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="rpost1">
-							<div class="rimg">
-								<img src="img/index/mainmini (5).jpg" alt="" class="img-responsive" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="rpost1">
-							<div class="rimg">
-								<img src="img/index/mainmini (6).jpg" alt="" class="img-responsive" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="rpost1">
-							<div class="rimg">
-								<img src="img/index/mainmini (7).jpg" alt="" class="img-responsive" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="rpost1">
-							<div class="rimg">
-								<img src="img/index/mainmini (8).jpg" alt="" class="img-responsive" />
-							</div>
-						</div>
-					</div>				
-               </div><!-- Row ends -->
-			   
+  	   <h4>Recent Work</h4>
+          <div id="portfolio">
+                        <!-- Add the above used filter names inside div tag. You can add more than one filter names. For image lightbox you need to include "a" tag pointing to image link, along with the class "prettyphoto".-->
+                       <div class="element aeration"><a href="img/gallery/mulching/mulching (6).jpg" class="prettyphoto" rel="prettyPhoto[a]" title="Aeration">
+                           <img src="img/index/mainmini (1).jpg" alt=""/>
+                       </a></div>
+                       <div class="element aeration"><a href="img/gallery/stone/stone (7).jpg" class="prettyphoto" rel="prettyPhoto[a]" title="Aeration">
+                           <img src="img/index/mainmini (2).jpg" alt=""/>
+                       </a></div>
+                       <div class="element aeration"><a href="img/gallery/stone/stone (13).jpg" class="prettyphoto" rel="prettyPhoto[a]" title="Aeration">
+                           <img src="img/index/mainmini (3).jpg" alt=""/>
+                       </a></div>
+                       <div class="element aeration"><a href="img/gallery/stone/stone (14).jpg" class="prettyphoto" rel="prettyPhoto[a]" title="Aeration">
+                           <img src="img/index/mainmini (4).jpg" alt=""/>
+                       </a></div>
+                       <div class="element aeration"><a href="img/gallery/stone/stone (35).jpg" class="prettyphoto" rel="prettyPhoto[a]" title="Aeration">
+                           <img src="img/index/mainmini (5).jpg" alt=""/>
+                       </a></div>
+                       <div class="element aeration"><a href="img/gallery/mowing/mowing (3).jpg" class="prettyphoto" rel="prettyPhoto[a]" title="Aeration">
+                           <img src="img/index/mainmini (6).jpg" alt=""/>
+                       </a></div>
+                       <div class="element aeration"><a href="img/gallery/mowing/mowing (15).jpg" class="prettyphoto" rel="prettyPhoto[a]" title="Aeration">
+                           <img src="img/index/mainmini (7).jpg" alt=""/>
+                       </a></div>				   
+                       <div class="element fall"><a href="img/gallery/mulching/mulching (1).jpg" class="prettyphoto" rel="prettyPhoto[a]" title="Fall Clean-Up">
+                           <img src="img/index/mainmini (8).jpg" alt=""/>
+                       </a></div>		
             </div>
-            
-            <!-- Recent post ends -->            
+            <!-- Recent post ends -->        
             
          </div>
       </div>
@@ -549,6 +511,14 @@
 				$('.menu').load('header.html');
 				$('.footer').load('footer.html');
 			});
+			
+							/* Isotope */
+				var $container = $('#portfolio');
+				// initialize isotope
+				$container.isotope({
+				  // options...
+	});
+	
 		</script>	
 		<script>
 		jQuery(function() {
