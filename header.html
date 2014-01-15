@@ -1,34 +1,39 @@
- <header>
+<header>
    <div class="container">
-      <div class="row">
+      <div itemscope itemtype="http://schema.org/LocalBusiness" class="row">
          <div class="col-md-2 col-sm-2">
-            <!-- Logo and site link -->
+            <!--  Logo and site link  -->
             <div class="logo">
-               <a href="index.html"><img src="img/logo.png"></a>
+               <a href="index.html"><img itemprop="image" src="img/logo.png"/></a>
             </div>
          </div>
 		 <div class="col-md-4 col-sm-4">
-            <!-- Logo and site link -->
+            <!--  Logo and site link  -->
             <div class="logo">
-               <h1>Greenway Property Maintenance</h1>
+               <h1 itemprop="name">Greenway Property Maintenance</h1>
             </div>
          </div>
 		 
          <div class="col-md-4 col-sm-4 col-sm-offset-1 col-md-offset-1">
             <div class="list">
-               <!-- Add your phone number here -->
+               <!--  Add your phone number here  -->
                <div class="phone">
-                  <i class="icon-phone"></i> Phone: 203-981-5270
+                  <i class="icon-phone"></i> Phone: 
+<span itemprop="telephone">203-981-5270</span>
                </div>
-               <hr />
-               <!-- Add your email id here -->
+               <hr/>
+               <!--  Add your email id here  -->
                <div class="email">
-                  <i class="icon-envelope-alt"></i>Email: clayton@greenwaypropertycare.com
+                  <i class="icon-envelope-alt"></i>Email: 
+<span itemprop="email">clayton@greenwaypropertycare.com</span>
                </div>
-               <hr />
-               <!-- Add your address here -->
-               <div class="address">
-                  <i class="icon-home"></i> Address: 25 Padanaram Rd, Danbury, CT
+               <hr/>
+               <!--  Add your address here  -->
+               <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="address">
+                  <i class="icon-home"></i> Address: 
+<span itemprop="streetAddress">25 Padanaram Rd</span>, 
+<span itemprop="addressLocality">Danbury</span>, 
+<span itemprop="addressRegion">CT</span>
                </div>
             </div>
          </div>
