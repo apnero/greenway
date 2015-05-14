@@ -2,11 +2,11 @@
   "name": "plasmascape",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.x",
+    "express": "3.x.x",
 	"postmark": "0.1.x"
   },
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": "0.12.x",
+    "npm": "2.7.x"
   }
 }
